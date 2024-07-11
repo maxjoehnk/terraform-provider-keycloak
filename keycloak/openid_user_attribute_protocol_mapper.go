@@ -88,7 +88,7 @@ func (protocolMapper *protocolMapper) convertToOpenIdUserAttributeProtocolMapper
 		AddToIdToken:            addToIdToken,
 		AddToAccessToken:        addToAccessToken,
 		AddToUserInfo:           addToUserInfo,
-		AddToTokenIntrospection: addToUserInfo,
+		AddToTokenIntrospection: addToTokenIntrospection,
 
 		UserAttribute:            protocolMapper.Config[userAttributeField],
 		ClaimName:                protocolMapper.Config[claimNameField],
