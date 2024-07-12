@@ -104,15 +104,15 @@ func resourceKeycloakOpenIdUserAttributeProtocolMapper() *schema.Resource {
 
 func mapFromDataToOpenIdUserAttributeProtocolMapper(data *schema.ResourceData) *keycloak.OpenIdUserAttributeProtocolMapper {
 	return &keycloak.OpenIdUserAttributeProtocolMapper{
-		Id:                       data.Id(),
-		Name:                     data.Get("name").(string),
-		RealmId:                  data.Get("realm_id").(string),
-		ClientId:                 data.Get("client_id").(string),
-		ClientScopeId:            data.Get("client_scope_id").(string),
-		AddToIdToken:             data.Get("add_to_id_token").(bool),
-		AddToAccessToken:         data.Get("add_to_access_token").(bool),
-		AddToUserInfo:            data.Get("add_to_userinfo").(bool),
-		AddToTokenIntrospection:  data.Get("add_to_token_introspection").(bool),
+		Id:                      data.Id(),
+		Name:                    data.Get("name").(string),
+		RealmId:                 data.Get("realm_id").(string),
+		ClientId:                data.Get("client_id").(string),
+		ClientScopeId:           data.Get("client_scope_id").(string),
+		AddToIdToken:            data.Get("add_to_id_token").(bool),
+		AddToAccessToken:        data.Get("add_to_access_token").(bool),
+		AddToUserInfo:           data.Get("add_to_userinfo").(bool),
+		AddToTokenIntrospection: data.Get("add_to_token_introspection").(bool),
 
 		UserAttribute:            data.Get("user_attribute").(string),
 		ClaimName:                data.Get("claim_name").(string),
